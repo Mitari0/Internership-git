@@ -35,3 +35,23 @@ Student / Classroom — classroom holds a list of students, can find the top one
 Preprocessor / Model / Pipeline — fake mini ML pipeline. normalize -> fit -> predict.
 
 password game — guess the password, 10 tries max, tells you which attempt got it right
+
+
+# NumPy Notes
+
+NumPy lets you work with arrays and numbers fast in Python — basically the base most data/ML libraries (pandas, scikit-learn, etc) are built on.
+
+## What I covered
+- making arrays (ones, zeros, identity)
+- slicing/indexing to grab or change parts of an array
+- copy() vs just referencing the same array
+- determinants (linalg.det)
+- min/max/sum with axis (per row or per column)
+- reshape()
+- sin/cos/tan (radians, not degrees)
+
+## Why it's used
+Regular Python lists are slow for big numeric work. NumPy does the same operations way faster since it works on the whole array at once instead of looping through it one by one.
+
+## Where it's used
+Pretty much anywhere you're dealing with numbers at scale — data analysis, machine learning, image processing, science/engineering calculations, finance, that kind of thing.
