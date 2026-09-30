@@ -39,14 +39,14 @@ password game — guess the password, 10 tries max, tells you which attempt got 
 
 # NumPy Notes
 
-NumPy lets you work with arrays and numbers fast in Python — basically the base most data/ML libraries (pandas, scikit-learn, etc) are built on.
+NumPy lets you work with arrays and numbers fast in Python — basically the base most data/ML libraries like pandas are built on.
 
 ## What I covered
 - making arrays (ones, zeros, identity)
 - slicing/indexing to grab or change parts of an array
 - copy() vs just referencing the same array
 - determinants (linalg.det)
-- min/max/sum with axis (per row or per column)
+- min/max/sum with axis 
 - reshape()
 - sin/cos/tan (radians, not degrees)
 
