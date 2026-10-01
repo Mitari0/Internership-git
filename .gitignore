@@ -1,4 +1,5 @@
-*
-!.gitignore
-!Student project/
-!Student project/first project.ipynb
+.ipynb_checkpoints/
+__pycache__/
+venv/
+*.exe
+*.zip
