@@ -52,3 +52,19 @@ Notes and examples from learning pandas, using a Pokémon dataset as the main pr
 - A data-cleaning pipeline that turns a messy CSV or JSON file into an analysis-ready table
 - Record-keeping tools, such as an employee, student or inventory table you can filter and summarize
 - Exploratory data analysis (EDA) on any CSV dataset, as a first step before visualization or machine learning
+
+## Matplotlib
+
+Notes from learning data visualization with matplotlib, using small sample data and the Pokémon dataset.
+
+**What's covered**
+- Line, bar, pie, scatter and histogram charts
+- Styling: titles, labels, colours, grid lines and legends
+- Charting pandas data, such as Pokémon counts by type
+
+**What you can build with it**
+- A Pokémon type dashboard
+- Grade and survey reports
+- Charts for exploring any dataset
+
+**Requirements:** Python 3, `pip install matplotlib numpy pandas`, and `data.csv` in the same folder as the notebook.
