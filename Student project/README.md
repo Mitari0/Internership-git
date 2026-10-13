@@ -1,35 +1,40 @@
-# Student Data Analysis
+Student Data Analysis
 
-A small Python project that reads a list of students from a CSV file and tells me two things: how many male and female students there are, and what the average age is for each.
+This project reads a file of students and works out two things:
 
-I wrote it without any libraries (no pandas), just plain Python, to practise the basics.
+how many male and female students there are
+the average grade point average for each
+The three versions
+File	What it uses
+Student-Data-Analysis.ipynb	Plain Python
+numpy version.ipynb	numpy
+pandas version.ipynb	pandas
 
-## What you need
-- Python 3
-- Jupyter Notebook or VS Code with the Jupyter extension
+All three give the same results.
 
-## Your CSV file
-It should have a header row and three columns in this order:
+Before you start
 
-```
-Name,Age,Gender
-```
+You need Python 3 and Jupyter Notebook (or VS Code with the Jupyter extension). For the numpy and pandas versions, install the libraries:
 
-Gender should be `Male` or `Female`.
+pip install numpy pandas
+Your data file
 
-## How to run it
-1. Open `Student-Data-Analysis.ipynb`.
-2. Change `FILE_PATH` at the top to where your CSV is saved.
-3. Run the cell.
+The file needs a header row, then one student per line. Two columns are used:
 
-## What you'll see
-```
-Male students: 95
-Female students: (your number)
-Average male age: 22.43
-Average female age: 21.68
-```
+gender, the third column (male or female)
+GPA, the fifth column (the grade point average)
+ID,class,gender,race,GPA,...
+1141,A,male,1,73.47,...
+1142,A,female,1,71.22,...
+How to run
+Open a notebook.
+Change FILE_PATH at the top to where your file is saved.
+Run the cell.
+Example output
+Male students: 37
+Female students: 68
+Average male grade point average: 81.85
+Average female grade point average: 83.56
+How it works
 
-## How it works
-It reads the file line by line, drops each age into a list for that gender, then uses `len()` to count and `sum()` to add up and work out the average.
-
+The program goes through the students one at a time. For each one it adds 1 to the count for their gender and adds their grade point average to that gender's total. At the end, total divided by count gives the average.
