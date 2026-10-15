@@ -7,13 +7,6 @@ This project reads a file of students and works out two things:
 
 ## The three versions
 
-| File | What it uses |
-| --- | --- |
-| `Student-Data-Analysis.ipynb` | Plain Python |
-| `numpy version.ipynb` | numpy |
-| `pandas version.ipynb` | pandas |
-
-All three give the same results.
 
 ## Before you start
 
