@@ -7,28 +7,24 @@ This project reads a file of students and works out two things:
 
 ## The three versions
 
-| File | What it uses |
-| --- | --- |
-| `Student-Data-Analysis.ipynb` | Plain Python |
-| `numpy version.ipynb` | numpy |
-| `pandas version.ipynb` | pandas |
+Each version lives on its own branch and gives the same results:
 
-All three give the same results.
+- **Plain Python:** `Student-Data-Analysis.ipynb` (branch `student-data-analysis`)
+- **numpy:** `numpy version.ipynb` (branch `numpy-version`)
+- **pandas:** `pandas version.ipynb` (branch `pandas-version`)
+
+The plain Python version needs nothing extra. The numpy and pandas versions need their library installed first; see `requirements.txt` in the branch.
 
 ## Before you start
 
-You need Python 3 and Jupyter Notebook (or VS Code with the Jupyter extension). For the numpy and pandas versions, install the libraries:
-
-```bash
-pip install numpy pandas
-```
+You need Python 3 and Jupyter Notebook (or VS Code with the Jupyter extension).
 
 ## Your data file
 
-The file needs a header row, then one student per line. Two columns are used:
+The data is in `students-data.csv`, included in each branch. It has a header row, then one student per line. Two columns are used:
 
 - **gender**, the third column (`male` or `female`)
-- **GPA**, the fifth column (the grade point average)
+- **GPA**, the fifth column
 
 ```csv
 ID,class,gender,race,GPA,...
@@ -36,10 +32,12 @@ ID,class,gender,race,GPA,...
 1142,A,female,1,71.22,...
 ```
 
+To use your own file, change `FILE_PATH` at the top of the notebook.
+
 ## How to run
 
-1. Open a notebook.
-2. Change `FILE_PATH` at the top to where your file is saved.
+1. Switch to the branch for the version you want.
+2. Open its notebook.
 3. Run the cell.
 
 ## Example output
@@ -53,4 +51,4 @@ Average female grade point average: 83.56
 
 ## How it works
 
-The program goes through the students one at a time. For each one it adds 1 to the count for their gender and adds their grade point average to that gender's total. At the end, total divided by count gives the average.
+The program goes through the students one at a time. For each one it adds 1 to the count for their gender and adds their GPA to that gender's total. At the end, total divided by count gives the average.
